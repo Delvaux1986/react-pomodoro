@@ -26,7 +26,10 @@ ET aujourd hui nous somme le 14/10/2020
 ## Techno utilisé :
 
 1. Réact 
-2. Je rajouterais les dépendances par la suite .    
+     **dependances**
+     1. Bootstrap
+     2. use-sound 
+Je rajouterais les dépendances par la suite .    
 
 
 ## Ou j'en suis  :
