@@ -1,6 +1,6 @@
 import React from 'react';
-import useSound from 'use-sound';
-import wav from './assets/alarm.wav';
+// import useSound from 'use-sound';
+// import wav from './assets/alarm.wav';
 
 class Timer extends React.Component {
     constructor() {
@@ -35,7 +35,7 @@ class Timer extends React.Component {
                         });
                         this.props.toggleInterval(this.state.isSession);
                     }else{
-                        this.useSound({wav});
+                        // this.useSound({wav});
                         this.setState({
                             isSession : true
                         });
