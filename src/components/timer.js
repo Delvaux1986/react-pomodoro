@@ -1,6 +1,6 @@
 import React from 'react';
 import useSound from 'use-sound';
-import wav from '../../assets/alarm.wav';
+import wav from './assets/alarm.wav';
 
 class Timer extends React.Component {
     constructor() {
