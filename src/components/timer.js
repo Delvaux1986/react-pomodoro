@@ -67,7 +67,8 @@ class Timer extends React.Component {
         this.props.onPlayStopTimer(false);
         this.props.refreshTimer();
         this.setState({
-            timerSeconde : 0
+            timerSeconde : 0,
+            isSession : true
         })
     }
    
