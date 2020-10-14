@@ -20,10 +20,13 @@ const SessionLength = (props) => {
 
     return (
         <section>
-            <button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseSession}>Down</button>
-                <p>{props.sessionLength}</p>
-            <button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseSession}>Up</button>
-        </section>
+            <h4 class="mb-3">Session length</h4>
+            <section class="d-flex justify-content-center">
+                <button class="mr-5" disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseSession}>Down</button>
+                    <p>{props.sessionLength}</p>
+                <button class="ml-5" disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseSession}>Up</button>
+            </section>
+        </section>    
     )
 }
 

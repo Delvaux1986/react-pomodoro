@@ -87,29 +87,31 @@ class App extends React.Component {
 
   render() {
     return (
-      <main>
-        <h2>Pomodoro Clock</h2>
-        <BreakInterval
-          isPlay={this.state.isPLay} 
-          breakInterval={this.state.breakLength} 
-          increaseBreak={this.onIncreaseBreakLength}
-          decreaseBreak={this.onDecreaseBreakLength}
-        />
-        <SessionLength
-          isPlay={this.state.isPLay}  
-          sessionLength={this.state.sessionLength}
-          increaseSession={this.onIncreaseSessionLength}
-          decreaseSession={this.onDecreaseSessionLength} 
-        />
-        <Timer 
-          timerMinute={this.state.timerMinute}
-          breakLength={this.state.breakLength}
-          updateTimerMinute={this.onUpdateTimerMin}
-          toggleInterval={this.onToggleInterval}
-          refreshTimer = {this.onRefreshTimer}
-          onPlayStopTimer={this.onPlayStopTimer}
-        />
-      </main>
+      
+        <main class="text-center bg-dark text-light">
+          <h2 class="mb-3">Pomodoro Clock</h2>
+          <Timer 
+            timerMinute={this.state.timerMinute}
+            breakLength={this.state.breakLength}
+            updateTimerMinute={this.onUpdateTimerMin}
+            toggleInterval={this.onToggleInterval}
+            refreshTimer = {this.onRefreshTimer}
+            onPlayStopTimer={this.onPlayStopTimer}
+          />
+          <BreakInterval
+            isPlay={this.state.isPLay} 
+            breakInterval={this.state.breakLength} 
+            increaseBreak={this.onIncreaseBreakLength}
+            decreaseBreak={this.onDecreaseBreakLength}
+          />
+          <SessionLength
+            isPlay={this.state.isPLay}  
+            sessionLength={this.state.sessionLength}
+            increaseSession={this.onIncreaseSessionLength}
+            decreaseSession={this.onDecreaseSessionLength} 
+          />
+          
+        </main>
     );
   }
 

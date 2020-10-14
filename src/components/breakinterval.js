@@ -16,12 +16,12 @@ const BreakInterval = (props) => {
     
     
     return (
-        <section>
-            <h4>break length</h4>
-            <section className="interval-container">
-                <button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseCounter}>Down</button>
+        <section class="mb-5">
+            <h4 class="mb-5">break length</h4>
+            <section class="d-flex justify-content-center">
+                <button class="mr-5" disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseCounter}>Down</button>
                     <p>{props.breakInterval}</p>
-                <button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseCounter}>Up</button>
+                <button class="ml-5"disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseCounter}>Up</button>
             </section>
         </section>
     )
