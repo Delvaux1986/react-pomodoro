@@ -1,5 +1,6 @@
 {
-  "name": "pomodoro-robby",
+  "homepage": "https://delvaux1986.github.io/react-pomodoro/",
+  "name": "react-pomodoro",
   "version": "0.1.0",
   "private": true,
   "engines": {
