@@ -2,7 +2,7 @@
 
 
 
-![GIF](.assets/pomodoro.gif)
+![GIF](./assets/pomodoro.gif)
 
 **Création d'un simple Pomodoro timer**
 
