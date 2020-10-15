@@ -28,7 +28,8 @@ ET aujourd hui nous somme le 14/10/2020
 1. Réact 
      **dependances**
      1. Bootstrap
-     2. use-sound 
+     2. use-sound
+     3. gh-pages 
 Je rajouterais les dépendances par la suite .    
 
 

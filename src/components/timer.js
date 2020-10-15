@@ -33,9 +33,10 @@ class Timer extends React.Component {
                         this.setState({
                             isSession: false
                         });
+                        this.playAudio();
                         this.props.toggleInterval(this.state.isSession);
                     }else{
-                        // this.useSound({wav});
+                        
                         this.setState({
                             isSession : true
                         });
@@ -74,7 +75,10 @@ class Timer extends React.Component {
             isSession : true
         })
     }
-   
+    playAudio() {
+        const audioEl = document.getElementsByClassName("audio-element")[0]
+        audioEl.play()
+      }
 
     render() {
         return (
@@ -89,6 +93,9 @@ class Timer extends React.Component {
                     ? "0" + this.state.timerSeconde
                     : this.state.timerSeconde}</span>
                 </section>
+                    <audio className="audio-element">
+                        <source src="https://assets.coderrocketfuel.com/pomodoro-times-up.mp3"></source>
+                    </audio>
                 <section class="text-center mb-5">
                     <button class="mr-2" onClick={this.playTimer} class="">Play</button>
                     <button class="mr-2 ml-2" onClick={this.stopTimer}>Stop</button>
