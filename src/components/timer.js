@@ -97,7 +97,7 @@ class Timer extends React.Component {
                         <source src="https://assets.coderrocketfuel.com/pomodoro-times-up.mp3"></source>
                     </audio>
                 <section class="text-center mb-5">
-                    <button class="mr-2" onClick={this.playTimer} class="">Play</button>
+                    <button class="mr-2" onClick={this.playTimer} disabled={this.props.isPlay === true ? "disabled" : ""} class="">Play</button>
                     <button class="mr-2 ml-2" onClick={this.stopTimer}>Stop</button>
                     <button class="ml-2" onClick={this.refresh}>Refresh</button>
                 </section>

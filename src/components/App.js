@@ -97,6 +97,7 @@ class App extends React.Component {
             toggleInterval={this.onToggleInterval}
             refreshTimer = {this.onRefreshTimer}
             onPlayStopTimer={this.onPlayStopTimer}
+            isPlay={this.state.isPLay} 
           />
           <BreakInterval
             isPlay={this.state.isPLay} 
